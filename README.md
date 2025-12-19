@@ -6,7 +6,7 @@
 - **算法助推机理量化**：分析不同推荐算法对虚假新闻传播的助推效应
 - **多特征融合预警模型**：构建集成模型实现虚假新闻检测
 - **分级治理与协同联动**：根据风险等级执行不同的治理策略并模拟效果
-- 
+  
 ## 环境依赖
 ```bash
 pandas>=1.3.0
@@ -34,16 +34,17 @@ python python main.py
 ## 输出文件
 程序运行后将生成以下文件：
 - **数据文件**
-data/processed_welfake.csv: 预处理后的完整数据集
+-data/processed_welfake.csv: 预处理后的完整数据集
 - **结果文件**
-results/boost_coefficients.csv: 算法 - 领域组合的助推系数
-results/boost_coeff_heatmap.png: 助推系数热力图
-results/performance_comparison.png: 模型性能对比图
+- results/boost_coefficients.csv: 算法 - 领域组合的助推系数
+- results/boost_coeff_heatmap.png: 助推系数热力图
+- results/performance_comparison.png: 模型性能对比图
+- 
 - **模型文件**
-models/scaler.pkl: 特征标准化器
-models/spread_model.pth: 传播特征模型
-models/text_rf.pkl: 文本特征随机森林模型
-models/user_rf.pkl: 用户特征随机森林模型
+- models/scaler.pkl: 特征标准化器
+- models/spread_model.pth: 传播特征模型
+- models/text_rf.pkl: 文本特征随机森林模型
+- models/user_rf.pkl: 用户特征随机森林模型
 
 ## 注意事项
 - 首次运行会自动下载 BERT 预训练模型，可能需要较长时间
