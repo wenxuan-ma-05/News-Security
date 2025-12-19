@@ -34,17 +34,24 @@ python python main.py
 ## 输出文件
 程序运行后将生成以下文件：
 - **数据文件**
--data/processed_welfake.csv: 预处理后的完整数据集
+```bash
+data/processed_welfake.csv: 预处理后的完整数据集
+```
+
 - **结果文件**
-- results/boost_coefficients.csv: 算法 - 领域组合的助推系数
-- results/boost_coeff_heatmap.png: 助推系数热力图
-- results/performance_comparison.png: 模型性能对比图
-- 
+```bash
+results/boost_coefficients.csv: 算法 - 领域组合的助推系数
+results/boost_coeff_heatmap.png: 助推系数热力图
+results/performance_comparison.png: 模型性能对比图
+```
+
 - **模型文件**
-- models/scaler.pkl: 特征标准化器
-- models/spread_model.pth: 传播特征模型
-- models/text_rf.pkl: 文本特征随机森林模型
-- models/user_rf.pkl: 用户特征随机森林模型
+```bash
+models/scaler.pkl: 特征标准化器
+models/spread_model.pth: 传播特征模型
+models/text_rf.pkl: 文本特征随机森林模型
+models/user_rf.pkl: 用户特征随机森林模型
+```
 
 ## 注意事项
 - 首次运行会自动下载 BERT 预训练模型，可能需要较长时间
